@@ -1,9 +1,6 @@
 def make_change(amount)
 	exchange = {}
-	quarter = 25
-	dime = 10
-	nickel = 5
-	penny = 1
+	coins = {"quarter" => 25, "dime" => 10, "nickel" => 5, "penny" => 1}
 	if amount >= quarter
 		exchange["quarter"] = amount / quarter
 		amount = amount % quarter
