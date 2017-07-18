@@ -16,5 +16,7 @@ class TestCC_Mob < Minitest::Test
 	def test_assert_that_2_cents_equals_2_pennies
 		assert_equal({"penny" => 2}, make_change(2))
 	end
-
+	def test_assert_that_5_cents_equals_1_nickel
+		assert_equal({"nickel" => 1}, make_change(5))
+	end
 end
