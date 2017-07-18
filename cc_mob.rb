@@ -1,5 +1,9 @@
 def make_change(amount)
 	exchange = {}
+	if amount >= 25
+		exchange["quarter"] = amount / 25
+		amount = amount % 25
+	end
 	if amount >= 10
 		exchange["dime"] = amount / 10
 		amount = amount % 10
