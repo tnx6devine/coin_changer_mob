@@ -1,6 +1,6 @@
 def make_change(amount)
 	if amount > 0
-		{"penny" => 1}
+		{"penny" => amount}
 	else
 		{}
 	end
