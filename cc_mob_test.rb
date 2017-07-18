@@ -34,8 +34,12 @@ class TestCC_Mob < Minitest::Test
 	def test_assert_that_16_cents_equals_1_dime_1_nickel_and_1_penny
 		assert_equal({"dime" => 1, "nickel" => 1, "penny" => 1}, make_change(16))
 	end
+
 	def test_assert_that_25_cents_equals_1_quarter
 		assert_equal({"quarter" => 1}, make_change(25))
 	end
 
+	def test_assert_that_347_cents_equals_correct_amount_of_coins
+		assert_equal({"quarter"=>13, "dime"=>2, "penny"=>2}, make_change(347))
+	end
 end

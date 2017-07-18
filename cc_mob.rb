@@ -1,18 +1,22 @@
 def make_change(amount)
 	exchange = {}
-	if amount >= 25
-		exchange["quarter"] = amount / 25
-		amount = amount % 25
+	quarter = 25
+	dime = 10
+	nickel = 5
+	penny = 1
+	if amount >= quarter
+		exchange["quarter"] = amount / quarter
+		amount = amount % quarter
 	end
-	if amount >= 10
-		exchange["dime"] = amount / 10
-		amount = amount % 10
+	if amount >= dime
+		exchange["dime"] = amount / dime
+		amount = amount % dime
 	end
-	if amount >= 5
-		exchange["nickel"] = amount / 5
-		amount = amount % 5
+	if amount >= nickel
+		exchange["nickel"] = amount / nickel
+		amount = amount % nickel
 	end
-	if amount >= 1
+	if amount >= penny
 		exchange["penny"] = amount
 	end
 exchange
