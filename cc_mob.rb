@@ -17,7 +17,8 @@ def make_change(amount)
 		amount = amount % nickel
 	end
 	if amount >= penny
-		exchange["penny"] = amount
+		exchange["penny"] = amount / penny
+		amount = amount % penny
 	end
 exchange
 end
