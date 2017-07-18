@@ -10,7 +10,7 @@ class TestCC_Mob < Minitest::Test
 		assert_equal({}, make_change(0))
 	end
 
-	def test_assert_that_1_equals_1_penny
+	def test_assert_that_1_cent_equals_1_penny
 		assert_equal({"penny" => 1}, make_change(1))
 	end
 
